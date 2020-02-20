@@ -60,7 +60,47 @@ sass:
   sass_dir: _sass
   style: compressed
 
+#-------------------------------
+# Archive List
+archive:
+  - year: 2020
+    name: Mask Finder
+    link:
+      web: maskfinder.com
+  - year: 2018
+    name: Online Education Learning Platform for Tution Center
+    type: Freelance
+    built:
+      - Codeigniter
+      - PHP
+      - MySQL
+      - RequireJs
+      - Boostrap
+      - JQuery
+    link:
+      web: stem.my
+  - year: 2018
+    name: Aircon Servicing and Ecommerce Platform
+    type: Freelance
+    built:
+      - PHP
+      - MySQL
+      - JQuery
+      - Boostrap
+    link:
+      web: aircondbuddy.com.my
 
+#-------------------------------
+# Archive List
+skill:
+  - Codeigniter
+  - PHP
+  - MySQL
+  - JQuery
+  - Javascript
+  - HTML
+  - CSS
+  - Angular
 #-------------------------------
 # Exclude from processing.
 # exclude:

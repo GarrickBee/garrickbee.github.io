@@ -16,108 +16,164 @@ layout: default
 	}
 </style>
 <div class="container">
-	<article class="article-first">
-		<div class="article-image-first row" >
-			<div class="col-12 col-md-7">
-				<div class="article-content-first">
-					<h2 class="article-title" >I am Garrick Ng</h2>
-					<p class="article-excerpt">I am a freelance web developer. Specialize in developing, building professional web and application system for my client. </p>
-					<ul class="social-profiles list-reset text-left">
-						<li class="social-profiles-item"><a href="{{ site.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a></li>
-						<li class="social-profiles-item"><a href="{{ site.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a></li>
-						<li class="social-profiles-item"><a href="{{ site.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a></li>
-						<!-- <li class="social-profiles-item"><a href="{{ site.github }}" class="social-profiles-link"><i class="ion ion-logo-pinterest"></i></a></li> -->
-					</ul>
+	<div class="row">
+		<div class="col-12">
+			<article class="article-first">
+				<div class="article-image-first" >
+					<div class="col-12 col-md-7">
+						<div class="article-content-first">
+							<h2 class="article-title font-weight-bold" >I am Garrick Ng</h2>
+							<p class="article-excerpt">I am a freelance web developer. Specialize in developing, building professional web and application system for my client. </p>
+							<ul class="social-profiles list-reset text-left">
+								<li class="social-profiles-item"><a href="{{ site.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a></li>
+								<li class="social-profiles-item"><a href="{{ site.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a></li>
+								<li class="social-profiles-item"><a href="{{ site.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a></li>
+								<!-- <li class="social-profiles-item"><a href="{{ site.github }}" class="social-profiles-link"><i class="ion ion-logo-pinterest"></i></a></li> -->
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
+			</article>
 		</div>
-	</article>
-</div>
-
-<div class="container">
+	</div>
+	<!-- About Me  -->
 	<div class="row">
 		<div class="col-12 col-md-8">
-			<div class="row">
-				<!-- About Me  -->
-				<div class="container">
-					<article class="article-first">
-						<div class="article-image-first row" >
-							<div class="col-12">
-								<div class="article-content-first">
-									<h2 class="article-title" >About Me</h2>
-									<p>Hi , I am Garrick , Software Engineer From Malaysia who enjoys coding for life. I develop professional web application which helps in solving daily problems and bring idea to live!</p>
-									<p>Technology that i am working with:</p>
-									<div class="row">
-										<p class="col-6 col-md-4"><i class="fas fa-angle-right pr-1"></i>PHP</p>
-										<p class="col-6 col-md-4"><i class="fas fa-angle-right pr-1"></i>JavaScript</p>
-										<p class="col-6 col-md-4"><i class="fas fa-angle-right pr-1"></i>HTML</p>
-										<p class="col-6 col-md-4"><i class="fas fa-angle-right pr-1"></i>CSS</p>
-										<p class="col-6 col-md-4"><i class="fas fa-angle-right pr-1"></i>MySQL</p>
-										<p class="col-6 col-md-4"><i class="fas fa-angle-right pr-1"></i>Codeigniter</p>
-										<p class="col-6 col-md-4"><i class="fas fa-angle-right pr-1"></i>Angular</p>
-									</div>
-								</div>
+			<article class="article-first">
+				<div class="article-image-first" >
+					<div class="col-12">
+						<div class="article-content-first">
+							<h2 class="article-title" >About Me</h2>
+							<p class="text-justify">Hi , I am Garrick , Software Engineer From Malaysia who enjoys coding for life. I develop professional web application which helps in solving daily problems and bring idea to live!</p>
+							<p>Technology that i am working with:</p>
+							<div class="row">
+								{% if site.skill %}
+								{%for skill in site.skill %}
+								<p class="col-6 col-md-4 d-flex"><i class="fas fa-angle-right pr-1 align-self-center"></i>&nbsp; <span>{{skill}}</span></p>
+								{% endfor %}
+								{% endif %}
 							</div>
 						</div>
-					</article>
+					</div>
 				</div>
-				<!-- Work History -->
-				<div class="container">
-					<article class="article-first">
-						<div class="article-image-first row" >
-							<div class="col-12">
-								<div class="article-content-first">
-									<h2 class="article-title" >Feture Project</h2>
-									<ul>Mask Finder</ul>
-									<ul>STEM</ul>
-									<ul>FLYTOR</ul>
-									<ul>OASIS</ul>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-				<!-- List of Archive -->
-				<div class="container">
-					<article class="article-first">
-						<div class="article-image-first row" >
-							<div class="col-12">
-								<div class="article-content-first">
-									<h2 class="article-title" >Archive Project</h2>
-									<table class="table table-hover table-borderless">
-										<tbody>
-											<tr class="text-white text-muted">
-												<td>Year</td>
-												<td>Description</td>
-												<td class="d-none d-sm-block">Type</td>
-												<td>Built With</td>
-												<td>Link</td>
-											</tr>
-
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-
-				<div class="container">
-					<article class="article-first">
-						<div class="article-image-first row" >
-							<div class="col-12">
-								<div class="article-content-first">
-									<h2 class="article-title" >Get In Touch</h2>
-								</div>
-							</div>
-						</div>
-					</article>
-				</div>
-
-			</div>
+			</article>
 		</div>
 		<div class="col-12 col-md-4">
-			{% include sidebar.html %}
+			<aside class="sidebar">
+				<div class="widget widget-social text-center">
+					<image class="rounded-circle my-3" style="max-width:150px;max-height:150px"  src="{{site.baseurl}}img/profile.png" ></image>
+					<h3 class="widget-title">Garrick Ng</h3>
+					<ul class="social-profiles list-reset">
+						{% if site.facebook %}
+						<li class="social-profiles-item">
+							<a href="{{ site.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a>
+						</li>
+						{% else %} {% endif %}
+
+						{% if site.twitter %}
+						<li class="social-profiles-item">
+							<a href="{{ site.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a>
+						</li>
+						{% else %} {% endif %}
+
+						{% if site.instagram %}
+						<li class="social-profiles-item">
+							<a href="{{ site.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a>
+						</li>
+						{% else %} {% endif %}
+
+						{% if site.pinterest %}
+						<li class="social-profiles-item">
+							<a href="{{ site.pinterest }}" class="social-profiles-link"><i class="ion ion-logo-pinterest"></i></a>
+						</li>
+						{% else %} {% endif %}
+					</ul>
+
+					<div class="widget-newsletter">
+						<button type="button" class="newsletter-button" onclick="location.href='mailto:ndf_724@hotmail.com';" ><i class="far fa-envelope"></i> Drop Me An Email</button>
+					</div>
+				</div>
+			</aside>
+		</div>
+		<!-- Feature Project -->
+		<div class="col-12">
+			<article class="article-first">
+				<div class="article-image-first ro" >
+					<div class="col-12">
+						<div class="article-content-first">
+							<h2 class="article-title" >Feture Project</h2>
+							<ul>Mask Finder</ul>
+							<ul>STEM</ul>
+							<ul>FLYTOR</ul>
+							<ul>OASIS</ul>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<!-- Achive -->
+		<div class="col-12">
+			<article class="article-first">
+				<div class="article-image-first" >
+					<div class="col-12">
+						<div class="article-content-first">
+							<h2 class="article-title font-weight-bold" >Archive Project</h2>
+							<table class="table table-hover table-borderless">
+								<thead>
+									<tr class="text-white text-muted">
+										<td class=" d-none d-sm-table-cell"></td>
+										<td>Year</td>
+										<td>Description</td>
+										<td class=" d-none d-sm-table-cell">Type</td>
+										<td class=" d-none d-sm-table-cell">Built With</td>
+										<td>Link</td>
+									</tr>
+								</thead>
+								<tbody>
+									{% if site.archive %}
+									{% for archive in site.archive %}
+									<tr class="text-white">
+										<td class=" d-none d-sm-table-cell" ><i class="far fa-folder-open"></i></td>
+										<td>{{archive.year}}</td>
+										<td>{{archive.name}}</td>
+										<td class=" d-none d-sm-table-cell">{{archive.type}}</td>
+										<td class=" d-none d-sm-table-cell text-small">
+											{% if archive.built %}
+											{% for built in archive.built %}
+											<span>&nbsp;·&nbsp;</span><span>{{built}}</span>
+											{% endfor %}
+											{% endif %}
+										</td>
+										<td class="d-flex flex-row" >
+											{% if archive.link['github'] %}
+											<a href=""><i class="fab fa-github-alt px-1"></i></a>
+											{% else %}
+											<a href=""><i class="fas fa-minus px-1"></i></a>
+											{% endif %}
+											{% if archive.link['web'] %}
+											<a href=""><i class="fas fa-link px-1"></i></a>
+											{% endif %}
+										</td>
+									</tr>
+									{% endfor %}
+									{% endif %}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+		<div class="col-12">
+			<article class="article-first">
+				<div class="article-image-first" >
+					<div class="col-12">
+						<div class="article-content-first">
+							<h2 class="article-title" >Get In Touch</h2>
+						</div>
+					</div>
+				</div>
+			</article>
 		</div>
 	</div>
 </div>
