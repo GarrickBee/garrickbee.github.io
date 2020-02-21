@@ -14,162 +14,239 @@ layout: default
 		-webkit-filter: grayscale(0);
 		-webkit-transform: scale(1.01);
 	}
+
 </style>
 <div class="container">
+	<!-- First Headline  -->
 	<div class="row">
 		<div class="col-12">
-			<article class="article-first">
-				<div class="article-image-first" >
-					<div class="col-12 col-md-7">
-						<div class="article-content-first">
-							<h2 class="article-title font-weight-bold" >I am Garrick Ng</h2>
-							<p class="article-excerpt">I am a freelance web developer. Specialize in developing, building professional web and application system for my client. </p>
-							<ul class="social-profiles list-reset text-left">
-								<li class="social-profiles-item"><a href="{{ site.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a></li>
-								<li class="social-profiles-item"><a href="{{ site.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a></li>
-								<li class="social-profiles-item"><a href="{{ site.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a></li>
-								<!-- <li class="social-profiles-item"><a href="{{ site.github }}" class="social-profiles-link"><i class="ion ion-logo-pinterest"></i></a></li> -->
-							</ul>
-						</div>
-					</div>
-				</div>
-			</article>
-		</div>
-	</div>
-	<!-- About Me  -->
-	<div class="row">
-		<div class="col-12 col-md-8">
-			<article class="article-first">
-				<div class="article-image-first" >
-					<div class="col-12">
-						<div class="article-content-first">
-							<h2 class="article-title" >About Me</h2>
-							<p class="text-justify">Hi , I am Garrick , Software Engineer From Malaysia who enjoys coding for life. I develop professional web application which helps in solving daily problems and bring idea to live!</p>
-							<p>Technology that i am working with:</p>
-							<div class="row">
-								{% if site.skill %}
-								{%for skill in site.skill %}
-								<p class="col-6 col-md-4 d-flex"><i class="fas fa-angle-right pr-1 align-self-center"></i>&nbsp; <span>{{skill}}</span></p>
-								{% endfor %}
-								{% endif %}
+			<article class="headline">
+				<div class="headline-image" >
+					<div class="row">
+						<div class="col-12 col-md-8">
+							<div class="headline-content">
+								<p class="sub-headline pb-3" >Welcome to my site, I am</p>
+								<h2 class="headline-title text-white pb-3" >Garrick Ng</h2>
+								<p class="py-3">I am a Software Developer currently base in Malaysia, specializing in building professional web and phone application.</p>
+								<ul class="social-profiles list-reset text-left">
+									<li class="social-profiles-item">
+										<a href="{{ site.github }}" class="social-profiles-link"><i class="fab fa-github-alt"></i></a>
+									</li>
+									<li class="social-profiles-item">
+										<a href="{{ site.linkedin }}" class="social-profiles-link"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+									<li class="social-profiles-item"><a href="{{ site.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a></li>
+									<li class="social-profiles-item"><a href="{{ site.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a></li>
+									<li class="social-profiles-item"><a href="{{ site.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</article>
 		</div>
+		<!-- About Me  -->
+		<div class="col-12 col-md-8">
+			<article class="dark-card">
+				<div class="dark-card-content px-3 py-5 px-md-4">
+					<h2 class="dark-card-title" >About Me</h2>
+					<p class="text-justify">Hi , I am Garrick , Software Engineer from Malaysia who enjoys coding for life. I develop professional web application which helps in solving daily problems and bringing idea to live!</p>
+					<p>Technology that I am working with recently:</p>
+					<div class="row">
+						{% if site.skill %}
+						{%for skill in site.skill %}
+						<p class="col-6 col-md-4 d-flex"><i class="primary-color fas fa-drumstick-bite pr-1 align-self-center"></i>&nbsp; <span>{{skill}}</span></p>
+						{% endfor %}
+						{% endif %}
+					</div>
+				</div>
+			</article>
+		</div>
+		<!-- Profile Badge -->
 		<div class="col-12 col-md-4">
 			<aside class="sidebar">
 				<div class="widget widget-social text-center">
 					<image class="rounded-circle my-3" style="max-width:150px;max-height:150px"  src="{{site.baseurl}}img/profile.png" ></image>
 					<h3 class="widget-title">Garrick Ng</h3>
 					<ul class="social-profiles list-reset">
-						{% if site.facebook %}
+						<li class="social-profiles-item">
+							<a href="{{ site.github }}" class="social-profiles-link"><i class="fab fa-github-alt"></i></a>
+						</li>
+						<li class="social-profiles-item">
+							<a href="{{ site.linkedin }}" class="social-profiles-link"><i class="fab fa-linkedin-in"></i></a>
+						</li>
 						<li class="social-profiles-item">
 							<a href="{{ site.facebook }}" class="social-profiles-link"><i class="ion ion-logo-facebook"></i></a>
 						</li>
-						{% else %} {% endif %}
-
-						{% if site.twitter %}
 						<li class="social-profiles-item">
 							<a href="{{ site.twitter }}" class="social-profiles-link"><i class="ion ion-logo-twitter"></i></a>
 						</li>
-						{% else %} {% endif %}
-
-						{% if site.instagram %}
 						<li class="social-profiles-item">
 							<a href="{{ site.instagram }}" class="social-profiles-link"><i class="ion ion-logo-instagram"></i></a>
 						</li>
-						{% else %} {% endif %}
-
-						{% if site.pinterest %}
-						<li class="social-profiles-item">
-							<a href="{{ site.pinterest }}" class="social-profiles-link"><i class="ion ion-logo-pinterest"></i></a>
-						</li>
-						{% else %} {% endif %}
 					</ul>
-
 					<div class="widget-newsletter">
 						<button type="button" class="newsletter-button" onclick="location.href='mailto:ndf_724@hotmail.com';" ><i class="far fa-envelope"></i> Drop Me An Email</button>
 					</div>
 				</div>
 			</aside>
 		</div>
+		<!-- Time Line -->
+		<div class="col-12">
+			<article class="dark-card">
+				<div class="dark-card-content px-3 py-5 px-md-4">
+					<div class="row px-1 px-md-4">
+						<h2 class="dark-card-title col-12" >Time Line</h2>
+						<div class="col-3 nav flex-column nav-pills text-right " role="tablist" aria-orientation="vertical">
+							{% if site.timeline %}
+							{% for timeline in site.timeline %}
+							{% assign active = '' %}
+							{% assign selected = 'false' %}
+							{% if forloop.first  %}
+							{% assign active = 'active' %}
+							{% assign selected = 'true' %}
+							{% endif %}
+							{% assign nav_index = forloop.index %}
+							<!-- <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a> -->
+							<a class="nav-link {{active}} text-white" id="timeline_pill_{{nav_index}}" data-toggle="pill" href="#timeline_tab_{{nav_index}}" role="tab" aria-controls="v-pills-profile" aria-selected="{{selected}}">{{timeline.company}}</a>
+							{% endfor %}
+							{% endif %}
+						</div>
+						<div class="col-9 tab-content" id="v-pills-tabContent">
+							{% if site.timeline %}
+							{% for timeline in site.timeline %}
+							{% assign active = '' %}
+							{% assign selected = 'false' %}
+							{% if forloop.first  %}
+							{% assign active = 'show active' %}
+							{% endif %}
+							{% assign nav_index = forloop.index %}
+							<!-- <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div> -->
+							<div class="tab-pane fade {{active}}" id="timeline_tab_{{nav_index}}" role="tabpanel" aria-labelledby="timeline_pill_{{nav_index}}">
+								<h4>{{timeline.name}} <a href="{{timeline.url}}">@ {{timeline.company}}</a></h4>
+								<p class="dark-card-date">{{timeline.date}}</p>
+								<table class="table table-borderless content-text-color" >
+									<tbody>
+										{% for desc in timeline.desc %}
+										<tr>
+											<td><i class="fas fa-caret-right"></i></td>
+											<td>{{desc}}</td>
+										</tr>
+										{% endfor %}
+									</tbody>
+								</table>
+
+							</div>
+							{% endfor %}
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
 		<!-- Feature Project -->
 		<div class="col-12">
-			<article class="article-first">
-				<div class="article-image-first ro" >
-					<div class="col-12">
-						<div class="article-content-first">
-							<h2 class="article-title" >Feture Project</h2>
-							<ul>Mask Finder</ul>
-							<ul>STEM</ul>
-							<ul>FLYTOR</ul>
-							<ul>OASIS</ul>
+			<div class="row">
+				{% if site.archive %}
+				{% for archive in site.archive %}
+				{% if archive.feature == true %}
+				<article class="article  col-12 col-md-4">
+					<div class="article-box">
+						<div class="article-head">
+							<a href="{{ archive.link['web'] }}" class="article-image" style="background-image: url('{{ site.baseurl }} /img/{{archive.image}}' )">
+								<div class="image-overlay">
+									<span class="image-overlay-text">{{archive.name | slice: 0}}</span>
+								</div>
+							</a>
+						</div>
+						<div class="article-content">
+							<div class="article-info">
+								<div class="article-date">
+									<span class="date">{{archive.year}}</span>
+								</div>
+								<div class="article-tag">
+									<a href="#/" class="tag">{{archive.type}}</a>
+								</div>
+							</div>
+							<h2 class="article-title">
+								<a href="{{ post.url | prepend: site.baseurl }}">{{archive.name}}</a>
+							</h2>
+							<p class="article-excerpt">{% if archive.name %}{{ archive.name | strip_html | truncate: 135 }}{% else %}{{ archive.name | strip_html | truncate: 135 }}{% endif %}</p>
 						</div>
 					</div>
-				</div>
-			</article>
+				</article> <!-- /.article -->
+				{% endif %}
+				{% endfor %}
+				{% endif %}
+			</div>
 		</div>
-		<!-- Achive -->
+
+		<!-- Archive -->
 		<div class="col-12">
-			<article class="article-first">
-				<div class="article-image-first" >
-					<div class="col-12">
-						<div class="article-content-first">
-							<h2 class="article-title font-weight-bold" >Archive Project</h2>
-							<table class="table table-hover table-borderless">
-								<thead>
-									<tr class="text-white text-muted">
-										<td class=" d-none d-sm-table-cell"></td>
-										<td>Year</td>
-										<td>Description</td>
-										<td class=" d-none d-sm-table-cell">Type</td>
-										<td class=" d-none d-sm-table-cell">Built With</td>
-										<td>Link</td>
-									</tr>
-								</thead>
-								<tbody>
-									{% if site.archive %}
-									{% for archive in site.archive %}
-									<tr class="text-white">
-										<td class=" d-none d-sm-table-cell" ><i class="far fa-folder-open"></i></td>
-										<td>{{archive.year}}</td>
-										<td>{{archive.name}}</td>
-										<td class=" d-none d-sm-table-cell">{{archive.type}}</td>
-										<td class=" d-none d-sm-table-cell text-small">
-											{% if archive.built %}
-											{% for built in archive.built %}
-											<span>&nbsp;·&nbsp;</span><span>{{built}}</span>
-											{% endfor %}
-											{% endif %}
-										</td>
-										<td class="d-flex flex-row" >
-											{% if archive.link['github'] %}
-											<a href=""><i class="fab fa-github-alt px-1"></i></a>
-											{% else %}
-											<a href=""><i class="fas fa-minus px-1"></i></a>
-											{% endif %}
-											{% if archive.link['web'] %}
-											<a href=""><i class="fas fa-link px-1"></i></a>
-											{% endif %}
-										</td>
-									</tr>
+			<article class="archive dark-card">
+				<div class="dark-card-content px-3 py-5 px-md-4">
+					<h2 class="dark-card-title font-weight-bold" >Archive Project</h2>
+					<p class="archive-subtitle"><i class="primary-color far fa-folder"></i> D:\Archive\List of stuff that I have built</p>
+					<table class="table table-hover table-borderless">
+						<thead>
+							<tr class="table-heading">
+								<td>Year</td>
+								<td class=" d-none d-sm-table-cell"></td>
+								<td>Description</td>
+								<td class=" d-none d-sm-table-cell">Type</td>
+								<td class=" d-none d-sm-table-cell">Built With</td>
+								<td>Link</td>
+							</tr>
+						</thead>
+						<tbody>
+							{% if site.archive %}
+							{% for archive in site.archive %}
+							<tr class="text-white">
+								<td class="archive-year" >{{archive.year}}</td>
+								<td class=" d-none d-sm-table-cell" ><i class="far fa-folder-open"></i></td>
+								<td>{{archive.name}}</td>
+								<td class=" d-none d-sm-table-cell archive-type">{{archive.type}}</td>
+								<td class="archive-built d-none d-sm-table-cell">
+									{% if archive.built %}
+									{% for built in archive.built %}
+									<span>&nbsp;·&nbsp; {{built}}</span>
 									{% endfor %}
 									{% endif %}
-								</tbody>
-							</table>
-						</div>
-					</div>
+								</td>
+								<td nowrap>
+									{% if archive.link['github'] %}
+									<a href="{{archive.link['github']}}" class="align-self-stretch"><i class="fab fa-github-alt px-1"></i></a>
+									{% else %}
+									<a href="#/" class="align-self-stretch"><i class="fas fa-minus px-1"></i></a>
+									{% endif %}
+									{% if archive.link['web'] %}
+									<a href="{{archive.link['web']}}" class="align-self-stretch"><i class="fas fa-link px-1"></i></a>
+									{% else %}
+									<a href="#/" class="align-self-stretch"><i class="fas fa-minus px-1"></i></a>
+									{% endif %}
+								</td>
+							</tr>
+							{% endfor %}
+							{% endif %}
+						</tbody>
+					</table>
 				</div>
 			</article>
 		</div>
+
+		<!-- Get In Touch -->
 		<div class="col-12">
-			<article class="article-first">
-				<div class="article-image-first" >
-					<div class="col-12">
-						<div class="article-content-first">
-							<h2 class="article-title" >Get In Touch</h2>
+			<article class="dark-card ">
+				<div class="dark-card-content px-3 py-5 px-md-4">
+					<div class="row justify-content-center">
+						<h2 class="dark-card-title col-12 text-center" >Get In Touch</h2>
+						<p class="col-12 col-md-6 text-center" style="font-size:18px;line-height:30px" >
+							If you are interested in getting me involved in your upcoming project, my inbox is always open. Just drop me an email and I will contact you as soon as possible.
+						</p>
+					</div>
+					<div class="row justify-content-center">
+						<div class="widget-newsletter col-12 col-md-3">
+							<button type="button" class="newsletter-button" onclick="location.href='mailto:ndf_724@hotmail.com';" ><i class="far fa-envelope"></i> Drop Me An Email</button>
 						</div>
 					</div>
 				</div>

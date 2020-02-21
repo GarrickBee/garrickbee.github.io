@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 
-title: Garrick Ng
+title: Garrick Ng | Software Engineer
 description: Garrick Ng is freelance software developer who specialize in developing and designing high qualilty web applications.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -16,7 +16,7 @@ author-avatar: 09.jpg
 #-------------------------------
 # Contact links
 facebook:  https://www.facebook.com/profile.php?id=100000190004640 # Add your Facebook handle
-twitter:   https://twitter.com/ # Add your Facebook handle
+twitter:   https://twitter.com/Garrick_Bee # Add your Facebook handle
 instagram: https://www.instagram.com/garrick_bee/ # Add your Facebook handle
 github: https://github.com/GarrickBee # Add your Facebook handle
 linkedin: https://www.linkedin.com/in/garrickng724/ # Add your Facebook handle
@@ -64,11 +64,73 @@ sass:
 # Archive List
 archive:
   - year: 2020
-    name: Mask Finder
+    feature: false
+    name: Open Source Survey System
+    type: Loading...
+    image: beero.png
+    built:
+      - Codeigniter
+      - PHP
+      - MySQL
+      - Boostrap
+      - Angular
     link:
-      web: maskfinder.com
+      github: https://github.com/GarrickBee/Beero-Survey
+  - year: 2020
+    feature: true
+    name: Crowdsourcing Platform for Mask and Sanitizer
+    type: Private
+    image: maskfinder.png
+    built:
+      - Codeigniter
+      - PHP
+      - MySQL
+      - Boostrap
+      - JQuery
+      - Google Map Api
+    link:
+      web: https://maskfinder.com
+  - year: 2019
+    feature: false
+    name: Mystery Travel Platform
+    type: Freelance
+    built:
+      - Codeigniter
+      - PHP
+      - MySQL
+      - Boostrap
+      - JQuery
+    link:
+      web: https://flytor.my
+  - year: 2019
+    feature: false
+    name: Beero Solution
+    type: Private
+    built:
+      - Codeigniter
+      - PHP
+      - MySQL
+      - Boostrap
+      - JQuery
+    link:
+      web: https://beerosolutions.com
+  - year: 2019
+    feature: true
+    name: SEO friendly Ecommerce Platform
+    image: beero.png
+    type: Freelance
+    built:
+      - Codeigniter
+      - PHP
+      - MySQL
+      - Boostrap
+      - JQuery
+    link:
+      web: https://payment.personalizedherbs.com
   - year: 2018
+    feature: true
     name: Online Education Learning Platform for Tution Center
+    image: stem.png
     type: Freelance
     built:
       - Codeigniter
@@ -78,8 +140,9 @@ archive:
       - Boostrap
       - JQuery
     link:
-      web: stem.my
+      web: https://stem.my
   - year: 2018
+    feature: false
     name: Aircon Servicing and Ecommerce Platform
     type: Freelance
     built:
@@ -88,10 +151,10 @@ archive:
       - JQuery
       - Boostrap
     link:
-      web: aircondbuddy.com.my
+      web: https://aircondbuddy.com.my
 
 #-------------------------------
-# Archive List
+# Skill List
 skill:
   - Codeigniter
   - PHP
@@ -101,6 +164,32 @@ skill:
   - HTML
   - CSS
   - Angular
+
+#-------------------------------
+# Skill List
+timeline:
+  - company: Beero
+    name: Freelance Developer
+    url: https://beerosolutions.com/
+    date: July 2018 - Present
+    desc:
+      - Freelance Developer at Beero Solutions.
+      - Develop mainly customize web applications for Small and Medium-sized Enterprises (SME)
+      - Experience in developing Content Management System (CMS), Logistic System, Membership, e-Commerce etc.
+  - company: University of Malaya
+    name: Research Engineer
+    url: https://www.um.edu.my/
+    date: Sept 2018 - 2019
+    desc:
+      - Conduct research on open source robotic field.
+      - Collabrate with Aerospace Malaysia Innovation Centre (AMIC) combining Internet of Things and robotic system
+      - Participate in Langkawi International Maritime and Aerospace Exhibition 2019 (LIMA). Presenting combination of Programmable Logic Controller (PLC) with Universal Robots (UR) with internet solutions (IOT).
+  - company: University of Malaya
+    name: Graduated
+    url: https://www.um.edu.my/
+    date: Sept 2014 - Sept 2018
+    desc:
+      - Gradudated First Class with Bachelor of Engineering (Hons) - Mechanical Engineering
 #-------------------------------
 # Exclude from processing.
 # exclude:

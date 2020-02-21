@@ -1,5 +1,6 @@
 // Main Colors
-$primary-color: #1ABC9C;
+$primary-color: #11fbfb;
+// $primary-color: #1ABC9C;
 $secondary-color: #C19CD8;
 $highlight: #ffeea8;
 $text: #C9D3E7;
@@ -33,3 +34,13 @@ $button-background-color: $primary-color;
 
 // Border
 $border-color: #3E4250;
+
+.primary-color
+{
+  color:$primary-color;
+}
+
+.content-text-color
+{
+  color:rgb(136, 146, 176);
+}
